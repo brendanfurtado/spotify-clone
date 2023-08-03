@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 
 import AuthModal from "@/components/AuthModal";
+import UploadModal from "@/components/UploadModal";
 
 const ModalProvider = () => {
   //prevent none of the modals are rendered on the server
@@ -18,6 +19,7 @@ const ModalProvider = () => {
   return (
     <>
       <AuthModal />
+      <UploadModal />
     </>
   );
 };

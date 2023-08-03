@@ -1,10 +1,23 @@
 "use client";
 import { TbPlaylist } from "react-icons/tb";
 import { AiOutlinePlus } from "react-icons/ai";
+import useAuthModal from "@/hooks/useAuthModal";
+import { useUser } from "@/hooks/useUser";
+import useUploadModal from "@/hooks/useUploadModal";
 
 const Library = () => {
+  const authModal = useAuthModal();
+  const uploadModal = useUploadModal();
+  const { user } = useUser();
+
   const onClick = () => {
-    //Handle upload later
+    //If user is not logged in, open the auth modal
+    if (!user) {
+      return authModal.onOpen();
+    }
+    //If user is logged in, open the upload modal
+    //TODO: Check for Subscription
+    return uploadModal.onOpen();
   };
 
   return (
