@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Deployed on Vercel: https://spotify-clone-chi-lovat.vercel.app/
+
+## How it Looks (Authenticated Login)
+<img width="1716" alt="image" src="https://github.com/brendanfurtado/spotify-clone/assets/43616587/9f7a845d-8d0b-4f34-8c94-e516e3dfdb0b">
+
 ## Getting Started
 
 First, run the development server:
